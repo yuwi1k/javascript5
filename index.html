@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li>
+                <a href="#">Услуги</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Услуга 1</a></li>
+                    <li><a href="#">Услуга 2</a></li>
+                    <li><a href="#">Услуга 3</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="slider">
+        <img src="image1.jpg" class="active" alt="Слайд 1">
+        <img src="image2.jpg" alt="Слайд 2">
+        <img src="image3.jpg" alt="Слайд 3">
+    </div>
+
+    <div class="section hidden">
+        <h1>Добро пожаловать на наш сайт!</h1>
+        <p>Это главная страница.</p>
+        <button id="openModal">Связаться с нами</button>
+    </div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Форма обратной связи</h2>
+            <form class="contact-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" rows="5" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
